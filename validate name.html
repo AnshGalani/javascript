@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script>
+			function valid()
+			{
+				var s=document.getElementsByName("txtname")[0].value();
+				var a=/^[a-zA-Z]+$/;
+				if (s.match(a))
+					alert("Valid");
+				else
+					alert("Invalid");
+			}
+		</script>
+	</head>
+	<body>
+		<form onsubmit="valid();">
+			Enter Your Name :
+			<input type="text" name="txtname" required>
+			<input type="submit" value="submit">
+		</form>
+	</body>
+</html>
