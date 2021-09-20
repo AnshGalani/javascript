@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script>
+			function valid()
+			{
+				var s=document.getElementsByName("txtnum")[0].value;
+				var a=/^[0-9]+$/;
+				if s(!s.match(a))
+					alert("Enter Number Only");
+				else if (s.length !=10)
+					alert("Cell Number Must Be Contain 10 Digits");
+				else 
+					alert("Valid");
+			}
+		</script>
+	</head>
+	<form onsubmit="valid();">
+		Enter Moblie Number :
+		<input type="text" name="txtnum" required>
+		<input type="submit">
+	</form>
+</html>
