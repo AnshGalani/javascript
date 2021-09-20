@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script>
+			function valid()
+			{
+				var s =document.getElementById("txtnum").value;
+				var a =/^[0-9]+$/;
+				if (!s.match(a))
+					alert("enter numbers only");
+				else if (s.lengh!=10)
+					alert("cell number must contain 10 digits");
+				else
+					alert("vaild");
+				return false;
+			}
+		</script>
+	</head>
+	<body>
+	<form onsubmit = "valid();">
+		Enter Mobile Number : <input type ="text" id= "txtnum" >
+							  <input type = "submit">
+	</form>
+	</body>
+</html>
