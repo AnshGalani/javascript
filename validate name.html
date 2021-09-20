@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script>
+			function valid()
+			{
+				var s=document.getElementById("txtfname").value;
+				var p=/^[A-Za-z]+$/;
+				if (s.match(p))
+					alert("valid");
+				else
+				{
+					alert ("Enter Proper First Name");
+					return false;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form onsubmit="return valid();">
+		First Name:<input type="text" id="txtfname" required>
+		<input type="submit">
+		</form>
+	</body>
+</html>
